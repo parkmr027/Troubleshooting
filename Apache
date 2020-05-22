@@ -1,3 +1,5 @@
+https://www.linode.com/docs/troubleshooting/troubleshooting-common-apache-issues/
+
 
 Restart Apache :
 
@@ -22,3 +24,27 @@ Debian and Ubuntu:
 Fedora and CentOS:
 
 # /etc/init.d/httpd reload
+
+Check the Logs :
+The best place to check for Apache errors is the Apache error logs. 
+To view the error logs, we recommend using the tail command with the -f flag, which shows you the most recent part of the log live as it’s updated.
+
+Example:
+
+# tail -f /var/log/apache2/error.log
+
+The default error log locations are:
+
+Debian and Ubuntu:# /var/log/apache2/error.log
+
+Fedora and CentOS:# /var/log/httpd/error_log
+
+The access logs can also help you find specific information about visitors to your server. The default access log locations are:
+
+Debian and Ubuntu: /var/log/apache2/access.log
+
+Fedora and CentOS: /var/log/httpd/access_log
+
+
+
+
