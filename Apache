@@ -1,0 +1,24 @@
+
+Restart Apache :
+
+Even if Apache is running, it can be useful to restart the server. 
+This will let you read the Apache startup message. If you get an error, you can use the text of the error in an online search to help you find more details and solutions. Restarting the server may produce several seconds of downtime.
+
+# /etc/init.d/httpd restart
+
+# /etc/init.d/apache2 restart
+
+#  /etc/rc.d/httpd restart
+
+Reload Apache :
+Restarting or reloading Apache is also useful if you’ve recently made changes to your server, but they don’t seem to be taking effect. This is true for changes made directly in the Apache configuration files, as well as for changes you’ve made to the configuration for a dynamic language like mod_python, mod_rails (for example, Phusion Passenger, or mod_rack), mod_ruby, etc. These interfaces cache code internally, and do not reread scripts on new requests.
+
+Reloading makes Apache reread its configuration files and incorporate the changes without a full restart, which avoids web server downtime. To reload Apache’s configuration, run the following command:
+
+Debian and Ubuntu:
+
+# /etc/init.d/apache2 reload
+
+Fedora and CentOS:
+
+# /etc/init.d/httpd reload
