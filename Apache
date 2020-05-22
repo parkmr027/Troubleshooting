@@ -1,4 +1,7 @@
-https://www.linode.com/docs/troubleshooting/troubleshooting-common-apache-issues/
+Apache intro :
+
+It is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0.
+
 
 
 Restart Apache :
@@ -44,6 +47,13 @@ The access logs can also help you find specific information about visitors to yo
 Debian and Ubuntu: /var/log/apache2/access.log
 
 Fedora and CentOS: /var/log/httpd/access_log
+
+Below common error in Apache :
+
+* https://support.plesk.com/hc/en-us/articles/115000422349-Apache-is-not-responding-Unable-to-fork-new-process
+
+* https://www.linode.com/docs/troubleshooting/troubleshooting-common-apache-issues/
+
 
 
 
