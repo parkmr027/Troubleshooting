@@ -1,0 +1,6 @@
+
+
+Command to take 1st row and last row of output :
+
+df -kh | sed -n -e '1p' -e '$p'
+
