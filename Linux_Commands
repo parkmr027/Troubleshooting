@@ -4,3 +4,9 @@ Command to take 1st row and last row of output :
 
 df -kh | sed -n -e '1p' -e '$p'
 
+
+Command to host on multiple domains ;
+
+for i in `cat imk`;do host $i;done
+
+
